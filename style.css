@@ -1,53 +1,44 @@
-/* *,*::after,*::before{
+*,*::after,*::before{
     box-sizing: border-box;
-    
-} */
+    padding:0;
+    margin:0;
+}
 body,html {
   height: 100%;
 }
-
 body {
-  margin: 0 auto;
-  background: linear-gradient(#403075, #882D61);
+  background: linear-gradient(#d4531f, #ebc8dc);
   display: flex;
   align-items: center;
   justify-content:center;
 }
-/* #container{
-   overflow: hidden;
-  max-width:600px;
-  border:2px solid #000;
-  position: absolute; 
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  padding:0;
-  
-} */
+#container{
+  width:620px;
+  height:120px; 
+  border:2px solid #000 ;
+  border-radius:8px;
+  background:rgba(0,0,0,.7); 
+  padding:30px 30px 0 ;
+}
 #keyboard{
-    max-width:600px;
-     background: linear-gradient(#403075, #882D61); 
-      overflow: hidden; 
-    /* border:2px solid #000; */
-    display:flex;
-    padding: 0;
-    
+    max-width:600px; 
+    overflow: hidden;  
+    display:flex; 
 }
 
 #keyboard li.ivory {
     list-style: none;
-    width: 40px;
-    height: 80px;
+    width: 60px;
+    height: 100px;
     border: 1px solid #000;
     cursor: pointer;
-    background: #fff; 
+    background: ivory; 
     position: relative; 
-    /* transform: translate(-50%); 
-     */
      border-radius: 6px;
+     
 }
 
- /* li.ebony{
+  /* li.ebony{
     height:45px;
     width:20px;
     border: 1px solid #fff;
@@ -56,25 +47,26 @@ body {
      transform: translate(-50%);   
     cursor: pointer;
     
-}
-#keyboard li.ebony:active{
-    background: #ccc;
 } */
+ #keyboard li.ivory:active{
+     background: ivory; 
+} 
 div.ebony{
-    height:45px;
-    width:20px;
+    height:60px;
+    width:25px;
     border: 1px solid #fff;
-    background: #000;
-    list-style: none; 
-     transform: translate(-50%);   
+    border-radius: 6px;
+    background:#000;
+    list-style: none;   
     cursor: pointer;
     position:absolute;
     top:0;
-    left:40px;
+    left:42px;
     z-index: 1;
+    box-shadow: 10px 10px 8px #ccc;
 }
 #keyboard div.ebony:active{
-    background: #ccc;
+    box-shadow: 0 10px 8px #ccc;
 }
   
   
