@@ -11,6 +11,11 @@ body {
   display: flex;
   align-items: center;
   justify-content:center;
+  flex-direction: column;
+}
+h1{
+  line-height: 3;
+  color: #fff;
 }
 #container{
   width:620px;

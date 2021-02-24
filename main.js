@@ -1,6 +1,7 @@
 
 const $keyBoard = document.getElementById('keyboard');
 const $audioTag = document.getElementById('audio');
+const $display = document.getElementById('display');
 //const $container = document.getElementById('container');
 //const $ebonyKeyBoard = document.getElementById('ebonykeyboard');
 let keys = ['C4', 'D4', 'E4', 'F4', 'G4', 'A4', 'B4', 'C5', 'D5', 'E5'];
@@ -58,6 +59,8 @@ const play = ($event) => {
     console.log(note);
     $audioTag.src = sound[note];
     $audioTag.play();
+    $display.innerText=note;
+    
 };
 
 keys.forEach((key) => {
