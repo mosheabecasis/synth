@@ -49,7 +49,7 @@ body {
     
 } */
  #keyboard li.ivory:active{
-     background: ivory; 
+     background: #ccc; 
 } 
 div.ebony{
     height:60px;
